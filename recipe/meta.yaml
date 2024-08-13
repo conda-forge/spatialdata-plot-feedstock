@@ -1,5 +1,5 @@
 {% set name = "spatialdata-plot" %}
-{% set version = "0.2.3.post0" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spatialdata_plot-{{ version }}.tar.gz
-  sha256: 7b92684951e048541fee4fbbf96d81671018669857c63ff4a4ec1bc1e63a3fd2
+  sha256: 40a5ac9d9993255a51fc48ba8d4c482c5743461eae2268792773f52275921145
 
 build:
   noarch: python
@@ -21,12 +21,23 @@ requirements:
     - hatch-vcs
     - pip
   run:
-    - python >=3.9
-    - spatialdata >=0.2.1
+    - anndata >=0.9.1
+    - cycler
+    - dask
+    - datashader
+    - geopandas
     - matplotlib-base
-    - scikit-learn
-    - scanpy
     - matplotlib-scalebar
+    - multiscale_spatial_image >=1.0.0
+    - numpy
+    - pandas
+    - python >=3.9
+    - scanpy
+    - scikit-image
+    - shapely
+    - spatialdata >=0.2.1
+    - xarray
+    - xarray-datatree
 
 test:
   imports:
