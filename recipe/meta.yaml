@@ -21,16 +21,17 @@ requirements:
     - hatch-vcs
     - pip
   run:
-    - anndata>=0.9.1
+    - anndata >=0.9.1
     - cycler
     - dask
     - datashader
     - geopandas
     - matplotlib-base
     - matplotlib-scalebar
-    - multiscale_spatial_image>=1.0.0
+    - multiscale_spatial_image >=1.0.0
     - numpy
     - pandas
+    - python >=3.9
     - scanpy
     - scikit-image
     - shapely
