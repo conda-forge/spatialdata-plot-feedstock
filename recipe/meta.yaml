@@ -28,7 +28,7 @@ requirements:
     - geopandas
     - matplotlib-base
     - matplotlib-scalebar
-    - multiscale_spatial_image >=1.0.0
+    - multiscale-spatial-image >=1.0.0
     - numpy
     - pandas
     - python >=3.9
