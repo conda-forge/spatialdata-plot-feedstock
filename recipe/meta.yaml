@@ -21,12 +21,22 @@ requirements:
     - hatch-vcs
     - pip
   run:
-    - python >=3.9
-    - spatialdata >=0.2.1
+    - anndata>=0.9.1
+    - cycler
+    - dask
+    - datashader
+    - geopandas
     - matplotlib-base
-    - scikit-learn
-    - scanpy
     - matplotlib-scalebar
+    - multiscale_spatial_image>=1.0.0
+    - numpy
+    - pandas
+    - scanpy
+    - scikit-image
+    - shapely
+    - spatialdata >=0.2.1
+    - xarray
+    - xarray-datatree
 
 test:
   imports:
