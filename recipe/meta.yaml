@@ -1,13 +1,13 @@
 {% set name = "spatialdata-plot" %}
-{% set version = "0.2.7" %}
+{% set version = "0.2.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spatialdata_plot-{{ version }}.tar.gz
-  sha256: d386fc6db6716f9c997087a3f85b383b6e150bf11b3e950877d337059ebb2f25
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatialdata_plot-{{ version }}.tar.gz
+  sha256: 55a60ddf77bb0d5ef3ef6233173052b9a2d210a6e7929eb1278688c784798caf
 
 build:
   noarch: python
