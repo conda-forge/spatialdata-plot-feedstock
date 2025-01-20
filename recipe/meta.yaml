@@ -6,17 +6,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spatialdata_plot-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatialdata_plot-{{ version }}.tar.gz
   sha256: d386fc6db6716f9c997087a3f85b383b6e150bf11b3e950877d337059ebb2f25
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - hatchling
     - hatch-vcs
     - pip
@@ -31,7 +31,7 @@ requirements:
     - multiscale-spatial-image >=1.0.0
     - numpy
     - pandas
-    - python >=3.9
+    - python >={{ python_min }}
     - scanpy
     - scikit-image
     - shapely
@@ -46,6 +46,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/scverse/spatialdata-plot.git
