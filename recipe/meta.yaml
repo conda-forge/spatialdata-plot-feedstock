@@ -27,7 +27,7 @@ requirements:
     - python >={{ python_min }}
     - scanpy
     - scikit-learn
-    - spatialdata>=0.3.0
+    - spatialdata >=0.3.0
 
 test:
   imports:
