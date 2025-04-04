@@ -1,5 +1,6 @@
 {% set name = "spatialdata-plot" %}
 {% set version = "0.2.8" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +17,7 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - hatchling
     - hatch-vcs
     - pip
@@ -31,7 +32,7 @@ requirements:
     - multiscale-spatial-image >=1.0.0
     - numpy
     - pandas
-    - python >=3.9
+    - python >={{ python_min }}
     - scanpy
     - scikit-image
     - shapely
@@ -46,6 +47,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/scverse/spatialdata-plot.git
