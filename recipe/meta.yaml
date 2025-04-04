@@ -22,8 +22,8 @@ requirements:
     - hatch-vcs
     - pip
   run:
-    - matplotlib
-    - matplotlib_scalebar
+    - matplotlib-base
+    - matplotlib-scalebar
     - python >={{ python_min }}
     - scanpy
     - scikit-learn
